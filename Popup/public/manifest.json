@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Dmarket Popup",
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "version": "0.1.0",
+  "description": "My Chrome Extension",
+  "icons": {
+    "16": "icons/dmarket.png",
+    "32": "icons/dmarket.png",
+    "48": "icons/dmarket.png",
+    "128": "icons/dmarket.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Dmarket Popup",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ]
+}
