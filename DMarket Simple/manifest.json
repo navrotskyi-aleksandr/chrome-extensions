@@ -1,0 +1,11 @@
+{
+  "name": "DMarket POC",
+  "version": "1.0.0",
+  "description": "This is an extension to look up CS items from DMarket marketplace",
+  "manifest_version": 3,
+  "author": "Oleksandr Navrotskyi",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "DMarket POC"
+  }
+}
